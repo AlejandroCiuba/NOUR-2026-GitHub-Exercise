@@ -18,7 +18,7 @@ def experiment_one() -> int:
 
 ## TODO: Store data in a DataFrame in a column called results
 def experiment_two(data: list) -> pd.DataFrame:
-    df: pd.DataFrame = pd.DataFrame()
+    df: pd.DataFrame = pd.DataFrame({"results": data})
     print(df.info())
     return df
 
