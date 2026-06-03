@@ -2,7 +2,7 @@
 ## TODO: Replace all instances of print() with logging.info
 ## NOTE: Should be imported as logging, use logging.info()
 import pandas as pd
-
+import logging
 import argparse
 
 from pathlib import Path
@@ -12,21 +12,21 @@ from pathlib import Path
 # NOTE: This will include importing random, use random.randint()
 def experiment_one() -> int:
     result: int = -1
-    print(f"Experiment one produced a result of {result}")
+    logging.info(f"Experiment one produced a result of {result}")
     return result
 
 
 ## TODO: Store data in a DataFrame in a column called results
 def experiment_two(data: list) -> pd.DataFrame:
     df: pd.DataFrame = pd.DataFrame()
-    print(df.info())
+    logging.info(df.info())
     return df
 
 
 ## TODO: Return the average gotten from the df
 def experiment_three(df: pd.DataFrame) -> int:
     avg: float = -1.0
-    print(f"The average is {avg:0.3}")
+    logging.info(f"The average is {avg:0.3}")
     return avg
 
 
