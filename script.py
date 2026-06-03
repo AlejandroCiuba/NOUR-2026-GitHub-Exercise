@@ -49,7 +49,9 @@ def main(args: argparse.Namespace) -> None:
     df = experiment_two(data)
     avg = experiment_three(df)
 
-    logging.info("Experiments finished")
+    df.plot(kind="bar", title="random number distribution")
+
+    print("Experiments finished")
 
 
 
