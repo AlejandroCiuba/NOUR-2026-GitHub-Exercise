@@ -30,6 +30,12 @@ def experiment_three(df: pd.DataFrame) -> int:
     return avg
 
 
+def experiment_alejandro2(df: pd.DataFrame) -> int:
+    ma: int = df['results'].max()
+    print(f"The max value is {ma}")
+    return ma
+
+
 def experiment_alejandro(df: pd.DataFrame) -> float:
     med: float = df['results'].median
     print(f"The median is {med:0.3f}")
