@@ -2,7 +2,7 @@
 ## TODO: Replace all instances of print() with logging.info
 ## NOTE: Should be imported as logging, use logging.info()
 import pandas as pd
-
+import random
 import argparse
 
 from pathlib import Path
@@ -11,7 +11,7 @@ from pathlib import Path
 # TODO: Experiment one should print out a random number between 1-10
 # NOTE: This will include importing random, use random.randint()
 def experiment_one() -> int:
-    result: int = -1
+    result: int = random.randint(1, 10)
     print(f"Experiment one produced a result of {result}")
     return result
 
