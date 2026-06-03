@@ -30,7 +30,7 @@ def experiment_three(df: pd.DataFrame) -> int:
     return avg
 
 
-def experiment_alejandro(df: pd.DataFrame) -> None:
+def experiment_alejandro(df: pd.DataFrame) -> float:
     med: float = df['results'].median
     print(f"The median is {med:0.3f}")
     return med
