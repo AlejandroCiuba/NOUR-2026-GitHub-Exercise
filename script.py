@@ -30,6 +30,12 @@ def experiment_three(df: pd.DataFrame) -> int:
     return avg
 
 
+def experiment_alejandro(df: pd.DataFrame) -> float:
+    med: float = df['results'].median
+    print(f"The median is {med:0.3f}")
+    return med
+
+
 ## TODO: Use args.repeats to determine the number of times experiment_one repeats
 def main(args: argparse.Namespace) -> None:
 
