@@ -25,7 +25,7 @@ def experiment_two(data: list) -> pd.DataFrame:
 
 ## TODO: Return the average gotten from the df
 def experiment_three(df: pd.DataFrame) -> int:
-    avg: float = -1.0
+    avg: float = df["results"].mean
     print(f"The average is {avg:0.3}")
     return avg
 
