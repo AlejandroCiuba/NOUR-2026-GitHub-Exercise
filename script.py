@@ -30,6 +30,12 @@ def experiment_three(df: pd.DataFrame) -> int:
     return avg
 
 
+def experiment_alejandro2(df: pd.DataFrame) -> int:
+    ma: int = df['results'].max()
+    print(f"The max value is {ma}")
+    return ma
+
+
 ## TODO: Use args.repeats to determine the number of times experiment_one repeats
 def main(args: argparse.Namespace) -> None:
 
