@@ -33,7 +33,7 @@ def experiment_three(df: pd.DataFrame) -> int:
 ## TODO: Use args.repeats to determine the number of times experiment_one repeats
 def main(args: argparse.Namespace) -> None:
 
-    data = [experiment_one() for i in range(50)]
+    data = [experiment_one() for i in range(args.repeats or 10)]
     df = experiment_two(data)
     avg = experiment_three(df)
 
