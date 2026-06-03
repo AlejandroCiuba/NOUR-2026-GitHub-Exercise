@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore all files in results/ but keep the folder itself
+results/*
+!results/
